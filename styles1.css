@@ -1,0 +1,746 @@
+body, html {
+  height: 100%;
+}
+
+body{
+    font-family: 'roboto';
+  background-color: #000000;
+    overflow-y:auto;
+}
+
+.bg {
+  /* The image used */
+  background-image: url(../img/bg.png);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+ /*-------------------------------------------grid-----------------------------------*/ 
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+  
+  }
+
+  .grid {
+    color: #000000;
+    padding-top: 12px;
+  }
+
+  /*-------------------------------------------grid end-----------------------------------*/
+
+  /*-------------------------------------------nav-----------------------------------*/
+
+  .nav{
+    grid-column: 1/2;
+    font-size: 20px;
+    text-align: center;
+    grid-row: 1/1;
+    animation-delay: 8s;
+    animation-duration: 1s;
+}
+
+    .nav1{
+    grid-column: 14/15;
+    grid-row: 1/1;
+    font-size: 20px;
+    text-align: center;
+    animation-delay: 8s;
+    animation-duration: 1s;
+}
+
+/*-------------------------------------------nav end-----------------------------------*/
+
+/*-------------------------------------------content end-----------------------------------*/
+
+  .video{
+    grid-column: 1/14;
+    grid-row: 2/5;
+    z-index: -1;
+    margin-left: 10rem;
+
+  }
+
+   .socialMedia1{
+    font-weight: 300;
+    color: #262223;
+    grid-column: 1/15;
+    grid-row: 2/5;
+    font-size: 28px;
+    display: inline;
+    margin-left: 0%;
+    margin-top: 20rem;
+  }
+
+  .socialLink1{
+    text-align: center;
+  }
+
+  .socialLink2{
+    padding-left: 4rem;
+    text-align: center;
+  }
+
+  .mainContent{
+    grid-column: 2/10;
+    grid-row: 5/7;
+    color: white;
+    padding-top: 12rem;
+    
+  }
+
+  .footer{
+    grid-column: 6/10;
+    grid-row-start:7;
+    grid-row-end: 7;
+    margin-bottom: 0.5rem;
+    margin-left: 6rem;
+    margin-top: 2rem;
+  }
+
+  .portrait{
+  grid-column: 11/14;
+  grid-row: 5/10;
+  box-shadow: #ffffff;
+  padding-top: 24rem;
+  width: 300px;
+height: 285px;
+  }
+
+  .arrow{
+    grid-row: 4/5;
+    grid-column: 7/9;
+    margin-left: 4.5rem;
+    margin-top: 7rem;
+    animation-delay: 9s;
+  }
+
+  .white{
+    color: #ffffff;
+  }
+
+  .black{
+    color: #000000;
+  }
+
+/*-------------------------------------------content end-----------------------------------*/
+
+/*-------------------------------------------animations-----------------------------------*/
+
+
+  #fadeout{
+    opacity: 0;
+    transition: 1s opacity;
+    text-align: center;
+  }
+
+
+  #fadeout2{
+    opacity: 0;
+    transition: 1s opacity;
+    text-align: center;
+  }
+
+  /*-------------------------------------------animations end-----------------------------------*/
+
+  /*-------------------------------------------tags-----------------------------------*/
+
+  video{
+    pointer-events: none;
+    width:100%; 
+  height:auto;
+
+  }
+
+  h1{
+    font-size: 120px;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+  p{
+      margin-bottom: 3rem;
+      font-size: 19px;
+      line-height: 2rem;
+      text-transform: lowercase;
+  }
+
+  a{
+    text-decoration: none;
+    color: #262223;
+  }
+
+  li{
+    list-style-type: none;
+    display: inline;
+    color: black;
+  }
+
+/*-------------------------------------------tags end-----------------------------------*/
+
+/*-------------------------------------------links and buttons-----------------------------------*/
+
+  .landingNav{
+    color: black;
+  }
+  
+  .nav-link:link{
+    color: #000000;
+  }
+  
+  .landingNav:hover{
+    color: #000000;
+    text-decoration: line-through;
+  }
+  
+  .socialLink1:link{
+    color: #262223;
+  }
+
+  .socialLink1:hover{
+    text-decoration: line-through;
+  }
+
+  .socialLink2:link{
+    color: #262223;
+  }
+
+  .socialLink2:hover{
+    text-decoration: line-through;
+  }
+
+  .btn1{
+    border: #ffffff 1px solid;
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    border-radius: 3rem;
+}
+
+.btn1:hover{
+    color: #000000;
+    background-color: white;
+}
+
+/*-------------------------------------------links and buttons end-----------------------------------*/
+
+
+/*-------------------------------------------media queries mobile-----------------------------------*/
+
+
+  @media only screen and (min-width: 500px) {
+    /* For mobile phones: */
+
+
+.bg {
+  /* The image used */
+  background-image: url(../img/bgMobile.png);
+
+  /* Full height */
+ width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ /*-------------------------------------------grid-----------------------------------*/ 
+
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+  
+  }
+
+  .grid {
+    color: #000000;
+    padding-top: 12px;
+  }
+
+  /*-------------------------------------------grid end-----------------------------------*/
+
+
+  /*-------------------------------------------nav-----------------------------------*/
+
+  .nav{
+    grid-column: 1/2;
+    font-size: 15px;
+    text-align: center;
+    grid-row: 1/1;
+    animation-delay: 8s;
+    animation-duration: 1s;
+}
+
+    .nav1{
+    grid-column: 13/14;
+    grid-row: 1/1;
+    font-size: 15px;
+    text-align: center;
+    margin-left: rem;
+    animation-delay: 8s;
+    animation-duration: 1s;
+}
+
+/*-------------------------------------------nav end-----------------------------------*/
+
+  
+/*-------------------------------------------content end-----------------------------------*/
+
+.video{
+  grid-column: 1/15;
+  grid-row: 3/7;
+  z-index: -1;
+  margin-left: auto;
+  margin-top: 2rem;
+  
+}
+
+ .socialMedia1{
+  font-weight: 300;
+  color: #262223;
+  grid-column: 4/14;
+  grid-row: 1/5;
+  font-size: 16px;
+  display: inline-flex;
+  padding-left: 4rem;
+  padding-top: 3rem;
+}
+
+.socialLink1{
+  text-align: center;
+}
+
+.socialLink2{
+  padding-left: 4rem;
+  text-align: center;
+}
+
+.mainContent{
+  grid-column: 2/13;
+  grid-row: 11/14;
+  padding-top: 0rem;
+  
+}
+
+.footer{
+  grid-column: 2/10;
+  grid-row: 14/15;
+  margin-bottom: 0.5rem;
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+
+.portrait{
+grid-column: 11/13;
+grid-row: 13/14;
+margin-top: 0rem;
+width: 140px;
+height: 135px;
+padding-left: 2rem;
+}
+
+.arrow{
+  grid-row: 6/9;
+  grid-column: 7/10;
+  animation-delay: 9s;
+  padding-left: 2rem;
+}
+
+/*-------------------------------------------content end-----------------------------------*/
+
+
+/*-------------------------------------------tag-----------------------------------*/
+
+p{
+  margin-bottom: 3rem;
+  font-size: 12px;
+  line-height: 1.5rem;
+  text-transform: lowercase;
+}
+
+h1{
+  font-size: 80px;
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+video{
+  pointer-events: none;
+
+}
+
+/*-------------------------------------------tags end-----------------------------------*/
+
+
+/*-------------------------------------------btn-----------------------------------*/
+  
+.btn1{
+  border: #ffffff 1px solid;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 3rem;
+  font-size: smaller;
+}
+
+/*-------------------------------------------btn end-----------------------------------*/
+
+
+  }
+
+/*-------------------------------------------media queries mobile end-----------------------------------*/
+
+
+/*-------------------------------------------media queries tablet-----------------------------------*/
+
+  @media only screen and (min-width: 768px) {
+
+    .bg {
+      /* The image used */
+      background-image: url(../img/bgTablet.png);
+    
+      /* Full height */
+      width: 100%;
+    
+      /* Center and scale the image nicely */
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size:cover;
+    }
+
+ /*-------------------------------------------grid-----------------------------------*/ 
+
+ .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+
+}
+
+.grid {
+  color: #000000;
+  padding-top: 12px;
+}
+
+/*-------------------------------------------grid end-----------------------------------*/
+
+
+/*-------------------------------------------nav-----------------------------------*/
+
+.nav{
+  grid-column: 1/2;
+  font-size: 20px;
+  text-align: center;
+  grid-row: 1/1;
+  animation-delay: 8s;
+  animation-duration: 1s;
+}
+
+  .nav1{
+  grid-column: 13/14;
+  grid-row: 1/1;
+  padding-left: -2rem;
+  font-size: 20px;
+  text-align: center;
+  animation-delay: 8s;
+  animation-duration: 1s;
+}
+
+/*-------------------------------------------nav end-----------------------------------*/
+
+
+/*-------------------------------------------content end-----------------------------------*/
+
+.video{
+  grid-column: 1/15;
+  grid-row: 2/5;
+  z-index: -1;
+  margin-left: 0rem;
+
+}
+
+ .socialMedia1{
+  font-weight: 300;
+  color: #262223;
+  grid-column: 1/14;
+  grid-row: 2/5;
+  font-size: 26px;
+  display: inline;
+  margin-left: -3rem;
+  margin-top: 18rem;
+}
+
+.socialLink1{
+  text-align: center;
+}
+
+.socialLink2{
+  padding-left: 4rem;
+  text-align: center;
+}
+
+
+.mainContent{
+  grid-column: 2/10;
+  grid-row: 5/7;
+  padding-top: 12rem;
+}
+
+.footer{
+  grid-column: 6/10;
+  grid-row-start:7;
+  grid-row-end: 7;
+  margin-bottom: 0.5rem;
+  margin-left: 6rem;
+  margin-top: 2rem;
+}
+
+.portrait{
+grid-column: 11/13;
+grid-row: 4/10;
+padding-top: 28rem;
+width: 300px;
+height: 285px;
+}
+
+.arrow{
+  grid-row: 4/5;
+  grid-column: 8/9;
+  margin-left: 10rem;
+  margin-top: 7rem;
+  animation-delay: 9s;
+}
+
+/*-------------------------------------------content end-----------------------------------*/
+
+
+/*-------------------------------------------animations-----------------------------------*/
+
+#fadeout{
+  opacity: 0;
+  transition: 1s opacity;
+  text-align: center;
+}
+
+
+#fadeout2{
+  opacity: 0;
+  transition: 1s opacity;
+  text-align: center;
+}
+
+/*-------------------------------------------animations end-----------------------------------*/
+
+
+/*-------------------------------------------tags-----------------------------------*/
+
+video{
+  pointer-events: none;
+  width:100%; 
+height:auto;
+
+}
+
+h1{
+  font-size: 120px;
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+p{
+  margin-bottom: 3rem;
+  font-size: 16px;
+  line-height: 2rem;
+  text-transform: lowercase;
+}
+
+/*-------------------------------------------tags end-----------------------------------*/
+
+  }
+
+  /*-------------------------------------------media queries tablet end-----------------------------------*/
+
+
+  /*-------------------------------------------media queries desktop-----------------------------------*/
+
+  @media only screen and (min-width: 1200px) {
+
+
+    .bg {
+      /* The image used */
+      background-image: url(../img/bg.png);
+    
+      /* Full height */
+      height: 100%;
+    
+      /* Center and scale the image nicely */
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size:cover;
+    }
+
+    /*-------------------------------------------grid-----------------------------------*/ 
+    .container {
+     display: grid;
+     grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+     grid-column-gap: 10px;
+     grid-row-gap: 15px;
+   
+   }
+   
+   .grid {
+     color: #000000;
+     padding-top: 12px;
+   }
+   
+   /*-------------------------------------------grid end-----------------------------------*/
+   
+   /*-------------------------------------------nav-----------------------------------*/
+   
+   .nav{
+     grid-column: 1/2;
+     font-size: 20px;
+     text-align: center;
+     grid-row: 1/1;
+     animation-delay: 8s;
+     animation-duration: 1s;
+   }
+   
+     .nav1{
+     grid-column: 14/15;
+     grid-row: 1/1;
+     font-size: 20px;
+     text-align: center;
+     animation-delay: 8s;
+     animation-duration: 1s;
+   }
+   
+   /*-------------------------------------------nav end-----------------------------------*/
+   
+   /*-------------------------------------------content end-----------------------------------*/
+   
+   .video{
+     grid-column: 1/14;
+     grid-row: 2/4;
+     z-index: -1;
+     margin-left: 9.5rem;
+     margin-top: 0rem;
+   
+   }
+   
+    .socialMedia1{
+     font-weight: 300;
+     color: #262223;
+     grid-column: 2/14;
+     grid-row: 2/5;
+     font-size: 28px;
+     display: inline;
+     margin-left: -5.5rem;
+     margin-top: 20.5rem;
+   }
+   
+   .socialLink1{
+     text-align: center;
+   }
+   
+   .socialLink2{
+     padding-left: 4rem;
+     text-align: center;
+   }
+   
+   .mainContent{
+     grid-column: 2/10;
+     grid-row: 4/6;
+     padding-top: 6rem;
+     
+   }
+   
+   .footer{
+     grid-column: 6/10;
+     grid-row-start:7;
+     grid-row-end: 7;
+     margin-bottom: 0.5rem;
+     margin-left: 6rem;
+     margin-top: 2rem;
+   }
+   
+   .portrait{
+   grid-column: 11/14;
+   grid-row: 4/6;
+   padding-top: 10rem;
+   width: 300px;
+   height: 285px;
+   }
+   
+   .arrow{
+     grid-row: 3/4;
+     grid-column: 7/9;
+     margin-left: 3.5rem;
+     margin-top: 7.5rem;
+     animation-delay: 9s;
+ 
+   }
+   
+   /*-------------------------------------------content end-----------------------------------*/
+   
+   /*-------------------------------------------animations-----------------------------------*/
+   
+   
+   #fadeout{
+     opacity: 0;
+     transition: 1s opacity;
+     text-align: center;
+   }
+   
+   
+   #fadeout2{
+     opacity: 0;
+     transition: 1s opacity;
+     text-align: center;
+   }
+   
+   /*-------------------------------------------animations end-----------------------------------*/
+   
+   /*-------------------------------------------tags-----------------------------------*/
+   
+   video{
+     pointer-events: none;
+   }
+   
+   h1{
+     color: #ffffff;
+     font-size: 120px;
+     text-align: left;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+   }
+   
+   p{
+     margin-bottom: 3rem;
+     font-size: 19px;
+     line-height: 2rem;
+     text-transform: lowercase;
+   }
+   
+   /*-------------------------------------------tags end-----------------------------------*/
+   
+    }
+
+/*-------------------------------------------media queries desktop end-----------------------------------*/
