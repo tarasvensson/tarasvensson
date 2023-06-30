@@ -1,0 +1,2183 @@
+body, html {
+  height: 100%;
+}
+
+body{
+    font-family: 'roboto';
+    background-color: #ffffff;
+    overflow-y:none;
+}
+
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+.bg{
+  /* The image used */
+  background-image: url(../img/bg.png);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+
+
+ /*-------------------------------------------grid-----------------------------------*/ 
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+  
+  }
+
+  .grid {
+    color: #000000;
+    padding-top: 12px;
+  }
+
+  /*-------------------------------------------grid end-----------------------------------*/
+
+  /*-------------------------------------------nav-----------------------------------*/
+
+  .nav{
+    grid-column: 1/2;
+    font-size: 20px;
+    text-align: center;
+    grid-row: 1/1;
+    animation-delay: 8s;
+    animation-duration: 1s;
+}
+
+    .nav1{
+    grid-column: 14/15;
+    grid-row: 1/1;
+    font-size: 20px;
+    text-align: center;
+    animation-delay: 8s;
+    animation-duration: 1s;
+}
+
+/*-------------------------------------------nav end-----------------------------------*/
+
+/*-------------------------------------------content end-----------------------------------*/
+
+  .socialMedia1{
+    font-weight: 300;
+    color: #262223;
+    grid-column: 3/13;
+    grid-row: 3/4;
+    font-size: 28px;
+    display: inline;
+    margin-left: 0rem;
+    margin-top: 0rem;
+    z-index: 2;
+  }
+  
+  .socialLink1{
+    text-align: center;
+  }
+  
+  .socialLink2{
+    margin-left: 28rem;
+    text-align: center;
+  }
+
+  .mainContent{
+    grid-column: 2/10;
+    grid-row: 5/7;
+    color: white;
+    padding-top: 12rem;
+    
+  }
+
+
+  .portrait{
+  grid-column: 11/14;
+  grid-row: 5/10;
+  padding-top: 24rem;
+  width: 300px;
+  height: 285px;
+  z-index: 2;
+  }
+
+  .arrow{
+    grid-row: 4/5;
+    grid-column: 7/9;
+    margin-left: 4.5rem;
+    margin-top: 7rem;
+    animation-delay: 9s;
+  }
+
+  .white{
+    color: #ffffff;
+  }
+
+  .black{
+    color: #000000;
+  }
+
+  .error{
+    grid-column: 2/14;
+    grid-row: 4/4;
+    text-align: center;
+}
+
+.form{
+grid-column: 2/8;
+grid-row: 2/5;
+border-right: #000000 1px solid;
+
+}
+
+.name{
+align-items: center;
+display: inline-flex;
+}
+
+.inputName{
+padding-left: 3rem;
+}
+
+.email{
+display: inline-flex;
+align-items: center;
+}
+
+.inputEmail{
+padding-left: 3rem;
+}
+
+.message{
+display: inline-flex;
+align-items: center;
+}
+
+.inputMessage{
+padding-left: 3rem;
+}
+
+.contactIcons{
+grid-column: 8/9;
+grid-row: 2/5;
+padding-top: 50px;
+padding-left: 3rem;
+}
+
+.contactText{
+grid-column: 9/14;
+grid-row: 2/5;
+padding-top: 40px;
+padding-left: 1.5rem;
+}
+
+.errorH{
+font-size: 130px;
+text-decoration: underline;
+}
+
+.errorT{
+font-size: 28px;
+}
+
+.heading{
+  grid-column: 2/14;
+  grid-row-start: 1;
+  height: 200px;
+  margin-top: 0%;
+  
+}
+.webCard{
+  grid-column: 2/6;
+  grid-row: inherit;
+  margin-top: 12%;
+}
+
+.appCard{
+  grid-column: 10/14;
+  grid-row: inherit;
+  margin-top: 12%;
+}
+
+.dataCard{
+  
+  grid-column: 6/10;
+  grid-row: inherit;
+  margin-top: 12%;
+}
+
+.footer{
+  grid-column: 6/9;
+  grid-row-start:10;
+  margin-left: 3rem;
+}
+
+.appMockup{
+  grid-column: 1/8;
+  grid-row: 2/8;
+  margin-top: 5%;
+
+}
+
+.appContent{
+  grid-column: 8/14;
+  grid-row: 2/8;
+  padding-left: 2rem;
+}
+
+.appVideo{
+  grid-column: 2/14;
+  grid-row: 9/10;
+  margin-top: 1%;
+  margin-left: 5.5rem;
+}
+
+
+.data{
+grid-column: 1/8;
+grid-row: 1/8;
+margin-left: 10%;
+margin-top: 27%;
+}
+
+.dataContent{
+grid-column: 8/14;
+grid-row: 1/8;
+padding-left: 2rem;
+margin-top: 45%;
+}
+
+.dataVideo{
+grid-column: 3/13;
+grid-row: 8/12;
+padding-top: 5rem;
+}
+
+.web{
+  grid-column: 1/8;
+  grid-row: 1/5;
+  border: #ffffff 1px sold;
+  margin-top: 27%;
+  margin-left: 8%;
+  }
+  
+  .webContent{
+  grid-column: 8/14;
+  grid-row: 1/5;
+  padding-left: 2rem;
+  margin-top: 40%;
+  }
+  
+  .webVideo{
+  grid-column: 3/13;
+  grid-row: 2/8;
+  margin-top:5rem;
+  }
+
+/*-------------------------------------------content end-----------------------------------*/
+
+/*-------------------------------------------animations-----------------------------------*/
+
+
+  #fadeout{
+    opacity: 0;
+    transition: 1s opacity;
+    text-align: center;
+  }
+
+
+  #fadeout2{
+    opacity: 0;
+    transition: 1s opacity;
+    text-align: center;
+  }
+
+
+  /*-------------------------------------------animations end-----------------------------------*/
+
+  /*-------------------------------------------tags-----------------------------------*/
+
+  h1{
+    font-size: 120px;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: -10px;
+}
+
+  p{
+      margin-bottom: 3rem;
+      font-size: 19px;
+      line-height: 2rem;
+      text-transform: lowercase;
+  }
+
+  a{
+    text-decoration: none;
+    color: #262223;
+  }
+
+  li{
+    list-style-type: none;
+    display: inline;
+    color: rgb(0, 0, 0);
+  }
+
+
+h3{
+    font-size: 28px;
+    font-weight: 300;
+}
+
+p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 18px;
+    line-height: 2rem;
+}
+
+h4{
+    font-size: 80px;
+    grid-column: 2/14;
+    grid-row: 4/9;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+
+
+/*-------------------------------------------tags end-----------------------------------*/
+
+/*-------------------------------------------links and buttons-----------------------------------*/
+
+  .landingNav{
+    color: black;
+  }
+  
+  .nav-link:link{
+    color: #000000;
+  }
+  
+  .landingNav:hover{
+    color: #000000;
+    text-decoration: line-through;
+  }
+  
+  .socialLink1:link{
+    color: #262223;
+  }
+
+  .socialLink1:hover{
+    text-decoration: line-through;
+  }
+
+  .socialLink2:link{
+    color: #262223;
+  }
+
+  .socialLink2:hover{
+    text-decoration: line-through;
+  }
+
+
+.nav-link:link{
+  color: #000000;
+}
+
+.btn3{
+  border-radius: 0.5rem;
+  border: 0.1rem solid black; 
+  padding: 10px 30px;
+  margin-left: 14.5rem;
+}
+
+.btn3:link{
+  color: #ffffff;
+}
+
+.btn3:hover{
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+}
+
+.homeLink, .homeLink:link{
+opacity: 1;
+}
+
+.homeLink:hover{
+opacity: 0.5;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+	
+	&.btn2{
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+		z-index: 0;
+		border: #000000 1px solid;
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    border-radius: 3rem;
+    color: #000000;
+		transition: all 200ms cubic-bezier(.25,.75,.5,1);
+		
+		
+		&:after {
+			content: '';
+			position: absolute;
+			transition: all 250ms cubic-bezier(.25,.75,.5,1.1);
+			width: 0;
+			right: 0%;
+			bottom: 0;
+			height: 100%;
+			background: #000000;
+			z-index: -1;
+      color: #fff;
+      border-radius: 3rem;
+      
+		}
+		
+		&:hover, &.hover {
+			color: #fff;
+      border-radius: 3rem;
+      
+			&:after {
+				width: 100%;
+    		right: auto;
+    		left: 0;
+        border-radius: 3rem;
+        
+			}
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+	
+	&.btn1{
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+		z-index: 0;
+		border: #000000 1px solid;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    border-radius: 3rem;
+    color: #000000;
+		transition: all 200ms cubic-bezier(.25,.75,.5,1);
+		
+		
+		&:after {
+			content: '';
+			position: absolute;
+			transition: all 250ms cubic-bezier(.25,.75,.5,1.1);
+			width: 0;
+			right: 0%;
+			bottom: 0;
+			height: 100%;
+			background: #000000;
+			z-index: -1;
+      color: #fff;
+      border-radius: 3rem;
+      
+		}
+		
+		&:hover, &.hover {
+			color: #fff;
+      border-radius: 3rem;
+      
+			&:after {
+				width: 100%;
+    		right: auto;
+    		left: 0;
+        border-radius: 3rem;
+        
+			}
+		}
+	}
+}
+
+
+.padding-btm{
+  margin-bottom: 50rem;
+}
+
+
+
+.margin-left{
+  margin-left: -2rem;
+}
+
+.video{
+  grid-column: 1/16;
+  grid-row: 1/4;
+}
+
+
+/*-------------------------------------------links and buttons end-----------------------------------*/
+
+
+
+/*----------------------------------------------------------------------------------MEDIA QUERIES START-------------------------------------------------------------------------------------*/
+
+
+
+/*-------------------------------------------MEDIA QUERIES MOBILE-----------------------------------*/
+
+
+          @media only screen and (min-width: 300px) and (max-width: 767px) {
+            /* For mobile phones: */
+
+
+        .bg{
+          /* The image used */
+          background-image: url(../img/backgroundGradientM.png);
+
+          /* Full height */
+          height: 100%;
+          width: auto;
+
+          /* Center and scale the image nicely */
+          background-position: top;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .bg2{
+          /* The image used */
+          background-image: url(../img/bg2.png);
+        
+          /* Full height */
+         height: 100%;
+         width: auto;
+          /* Center and scale the image nicely */
+          background-position: top;
+          background-repeat: no-repeat;
+        }
+
+        /*-------------------------------------------GRID-----------------------------------*/ 
+
+          .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+            grid-column-gap: 10px;
+            grid-row-gap: 15px;
+          
+          }
+
+          .grid {
+            color: #000000;
+            padding-top: 12px;
+          }
+
+          /*-------------------------------------------GRID END-----------------------------------*/
+
+
+          /*-------------------------------------------NAV-----------------------------------*/
+
+          .nav{
+            grid-column: 1/2;
+            font-size: 15px;
+            text-align: center;
+            grid-row: 1/1;
+            animation-delay: 8s;
+            animation-duration: 1s;
+            font-weight: 300;
+        }
+
+            .nav1{
+            grid-column: 14/15;
+            grid-row: 1/1;
+            font-size: 15px;
+            text-align: center;
+            margin-left: rem;
+            animation-delay: 8s;
+            animation-duration: 1s;
+            font-weight: 300;
+        }       
+        
+        .navLogo{
+          grid-row: 1/1;
+          grid-column: 7/9;
+          margin: 0 auto;
+        }
+
+
+        /*-------------------------------------------NAV END-----------------------------------*/
+
+          
+        /*-------------------------------------------CONTENT----------------------------------------*/
+
+
+           /*-------------------------------------------general content-----------------------------------*/
+
+          .heading{
+                    grid-column: 2/14;
+                    grid-row: 2/3;
+                    height: 100px;
+                    margin-top: 2.5rem;
+        
+                }
+
+            /*-------------------------------------------general content end-----------------------------------*/
+
+
+            /*-------------------------------------------home page-----------------------------------*/
+
+
+            .socialMedia1{
+              font-weight: 300;
+              color: #262223;
+              grid-column: 2/14;
+              grid-row: 3/4;
+              font-size: 16px;
+              display: inline-flex;
+              margin-left: 0rem;
+              margin-top: -10.5rem;
+              justify-content: space-around;
+              font-weight: 200;
+              margin-bottom: 0;
+            }
+            
+            .socialLink1{
+              text-align: center;
+            }
+            
+            .socialLink2{
+              margin-left: 0rem;
+              text-align: center;
+            }
+
+            .mainContent{
+              grid-column: 2/14;
+              grid-row: 5/7;
+              padding-top: 5rem;
+              
+            }
+
+            .headingHome{
+              margin-top: 2rem;
+              grid-row: 3/4;
+            }
+
+            .portrait{
+              grid-column: 8/14;
+              grid-row: 5/7;
+              padding-top: 0rem;
+              margin-top: 35rem;
+              z-index: 2;
+              margin-bottom: 15rem;
+              width: 100%;
+              height: auto;
+              }
+
+            .arrow{
+              grid-row: 3/5;
+              grid-column: 2/14;
+              animation-delay: 9s;
+              padding-left: 0rem;
+              padding-top: 10rem;
+              margin: 0 auto;
+            }
+
+            .video{
+              grid-column: 1/15;
+              grid-row: 1/4;
+              margin-top: 20rem;
+            }
+
+
+            /*-------------------------------------------home page end-----------------------------------*/
+
+
+            /*-------------------------------------------contact page-----------------------------------*/
+
+          
+      
+          .form{
+            grid-column: 2/14;
+            grid-row: 3/8;
+            border-right: #ffffff00 1px solid;
+            padding-left: 0rem;
+            margin-top: 3rem;
+          }
+      
+          .name{
+            align-items: center;
+            display: inline-flex;
+          }
+      
+          .inputName{
+            padding-left: 0.8rem;
+          }
+      
+          .email{
+            display: inline-flex;
+            align-items: center;
+          }
+      
+          .inputEmail{
+            padding-left: 0.8rem;
+          }
+      
+          .message{
+            display: inline-flex;
+            align-items: center;
+          }
+      
+          .inputMessage{
+            padding-left: 0.8rem;
+          }
+      
+        .contactIcons{
+            grid-column: 2/5;
+            grid-row: 8/9;
+          padding-top: 2.3rem;
+          margin-left: 1.2rem;
+        }
+      
+        .contactText{
+            grid-column: 5/14;
+            grid-row: 8/9;
+            padding-left: 3rem;
+            padding-top: 2rem;
+        }
+
+        .bi-geo-alt{
+          margin-top: -1rem;
+        }
+  
+        .bi-instagram{
+          margin-top: -1rem;
+          margin-left: 0.2rem;
+        }
+
+        /*-------------------------------------------contact page end-----------------------------------*/
+
+
+        /*-------------------------------------------error page-----------------------------------*/
+
+
+        .errorH{
+            font-size: 130px;
+            text-decoration: underline;
+        }
+      
+        .errorT{
+            font-size: 20px;
+        }
+    
+        .error{
+              grid-column: 2/14;
+              grid-row: 4/4;
+        }
+      /*-------------------------------------------error page end-----------------------------------*/
+
+
+      /*-------------------------------------------portfolio page-----------------------------------*/
+       
+
+      .webCard{
+          grid-column: 2/14;
+          grid-row: 3/4;
+          margin-top: 1rem;
+      }
+      
+      .appCard{
+          grid-column: 2/14;
+          grid-row: 5/6;
+          margin-top: 10%;
+      }
+      
+      .dataCard{
+          grid-column: 2/14;
+          grid-row: 6/7;
+          margin-top: 10%;
+      }
+      
+
+      /*-------------------------------------------portfolio page-----------------------------------*/
+
+
+      /*-------------------------------------------app page-----------------------------------*/
+      
+
+      .appMockup{
+          grid-column: 2/14;
+          grid-row: 3/4;
+          border: #ffffff 1px sold;
+
+      }
+      
+      .appContent{
+          grid-column: 2/14;
+          grid-row: 4/5;
+          
+      }
+      
+      .appVideo{
+          grid-column: 2/14;
+          grid-row: 6/7;
+          margin: 0 auto;
+          margin-top: 1%;
+          margin-left: 0rem;
+      }
+
+
+      /*-------------------------------------------app page end-----------------------------------*/
+
+
+      /*-------------------------------------------infographic page-----------------------------------*/
+
+
+      .data{
+        grid-column: 2/14;
+        grid-row: 3/4;
+        border: #ffffff 1px sold;
+        margin-top: 5rem;
+    }
+
+      .dataContent{
+          grid-column: 2/14;
+          grid-row: 4/5;
+          margin-top: 0rem;
+      }
+
+      .dataVideo{
+          grid-column: 2/14;
+          grid-row: 5/6;
+          margin-top:1rem;
+          padding-bottom: 2rem;
+      }
+
+
+      /*-------------------------------------------infographic page end-----------------------------------*/
+
+
+      /*-------------------------------------------ui page-----------------------------------*/
+
+
+      .web{
+        grid-column: 2/14;
+        grid-row: 3/4;
+        margin-top: -2rem;
+        margin-left: 0rem;
+        }
+        
+        .webContent{
+        grid-column: 2/14;
+        grid-row: 4/5;
+        margin-top: -2rem;
+        margin-bottom: 0%;
+        margin-left: 0rem;
+        }
+        
+        .webVideo{
+        grid-column: 2/14;
+        grid-row: 6/7;
+        margin-top:1rem;
+        padding-bottom: 2rem;
+        }
+
+ 
+         /*-------------------------------------------ui page end-----------------------------------*/
+      
+        /*--------------------------------------------CONTENT END-----------------------------------------------*/
+
+
+        /*-------------------------------------------TAGS-----------------------------------*/
+
+
+        input[type=text], select, textarea {
+          width: 230px;
+          padding: 12px;
+          border-radius: 0.5rem;
+          border: 0.1rem solid black; 
+          font-family: 'roboto';
+        }
+        
+        
+        
+        label {
+          text-align: left;
+          color:#000000;
+          font-family: 'roboto';
+          width: 8rem;
+      
+        }
+      
+      a{
+        text-decoration: none;
+      }    
+
+        li{
+        list-style-type: none;
+        display: inline;
+        color: black;
+        }
+
+        h1{
+          font-size: 70px;
+          text-align: left;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          letter-spacing: -8px;
+        }
+
+        h3{
+          font-size: 24px;
+          font-weight: 300;
+      }
+      
+      p{
+          margin-top: 0.5rem;
+          margin-bottom: 1rem;
+          font-size: smaller;
+          line-height: 1.5rem;
+          font-weight: 100;
+      }
+    
+      h4{
+        font-size: 60px;
+        grid-column: 2/14;
+        grid-row: 5/6;
+        margin-bottom: 2%;
+    }
+
+
+        /*-------------------------------------------TAGS END-----------------------------------*/
+
+
+        /*-------------------------------------------BTNS-----------------------------------*/
+          
+
+        .btn1{
+          border: #000000 1px solid;
+          padding-left: 2rem;
+          padding-right: 2rem;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+          border-radius: 3rem;
+          font-size: smaller;
+        }
+
+        .btn3{
+          border-radius: 0.4rem;
+          border: 0.1rem solid black; 
+          padding: 8px 15px;
+          color: #000000;
+          margin-bottom: 2rem;
+          font-size: 10px;
+          background-color: #ffffff;
+          margin-left: 12.5rem;
+        }
+
+        .btn2{
+          border: #000000 1px solid;
+          padding-left: 2.1rem;
+          padding-right: 2.1rem;
+          padding-top: 0.3rem;
+          padding-bottom: 0.3rem;
+          border-radius: 3rem;
+          font-size: smaller;
+      }
+
+      .pagination{
+        height: 2.2rem;
+        width: 18rem;
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 10rem;
+        writing-mode:horizontal-tb;
+        text-orientation:sideways;
+        display:inline-flex;
+        justify-content: space-between;
+        font-weight: 300;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        padding-top: 0rem;
+        letter-spacing: 0px;
+        grid-column: 6/10;
+        grid-row: 2/3;
+        z-index: 1;
+        
+      }
+      
+      .project1{
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 5rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+        margin-left: 0.2rem;
+        padding: 0.4rem 1.5rem 0.4rem 1.5rem;
+        font-size: 12px;
+      }
+      
+      .project1:hover{
+        background-color: #ffffff;
+        color: #000000;
+  
+      }
+  
+      .project2{
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 5rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+        margin-left: 0rem;
+        padding: 0.4rem 1.5rem 0.4rem 1.5rem;
+        font-size: 12px;
+      }
+      
+      .project2:hover{
+        background-color: #ffffff;
+        color: #000000;
+      }
+      
+      .project3{
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 5rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+        margin-right: 0.2rem;
+        padding: 0.4rem 1.5rem 0.4rem 1.5rem;
+        font-size: 12px;
+      }
+      
+      .project3:hover{
+        background-color: #ffffff;
+        color: #000000;
+      }
+
+      #fadeout{
+        opacity: 0;
+        transition: 1s opacity;
+        text-align: center;
+      }
+    
+    
+      #fadeout2{
+        opacity: 0;
+        transition: 1s opacity;
+        text-align: center;
+      }
+    
+      
+        /*-------------------------------------------BTNS END-----------------------------------*/
+
+
+          }
+
+
+          @media only screen and (min-width: 768px) and (max-width: 1199px){
+            /* For tablets: */
+
+
+        .bg{
+          /* The image used */
+          background-image: url(../img/backgroundGradientT.png);
+
+          /* Full height */
+         height: auto;
+         width: 100%;
+
+          /* Center and scale the image nicely */
+          background-position: top;
+          background-repeat: no-repeat;
+          background-size:cover;
+        }
+
+        .bg2{
+          /* The image used */
+          background-image: url(../img/bg2.png);
+        
+          /* Full height */
+          height: 100%;
+          width: auto;
+
+          /* Center and scale the image nicely */
+          background-position: top;
+          background-repeat: no-repeat;
+        }
+
+        /*-------------------------------------------GRID-----------------------------------*/ 
+
+          .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+            grid-column-gap: 10px;
+            grid-row-gap: 15px;
+          
+          }
+
+          .grid {
+            color: #000000;
+            padding-top: 12px;
+          }
+
+          /*-------------------------------------------GRID END-----------------------------------*/
+
+
+          /*-------------------------------------------NAV-----------------------------------*/
+
+          .nav{
+            grid-column: 1/2;
+            font-size: 15px;
+            text-align: center;
+            grid-row: 1/1;
+            animation-delay: 8s;
+            animation-duration: 1s;
+            font-weight: 300;
+        }
+
+            .nav1{
+            grid-column: 14/15;
+            grid-row: 1/1;
+            font-size: 15px;
+            text-align: center;
+            margin-left: 0rem;
+            animation-delay: 8s;
+            animation-duration: 1s;
+            font-weight: 300;
+        }       
+        
+        .navLogo{
+          grid-row: 1/1;
+          grid-column: 7/9;
+          margin: 0 auto;
+        }
+
+
+        /*-------------------------------------------NAV END-----------------------------------*/
+
+          
+        /*-------------------------------------------CONTENT----------------------------------------*/
+
+
+           /*-------------------------------------------general content-----------------------------------*/
+          
+
+            .heading{
+              grid-column: 2/14;
+              grid-row: 2/3;
+              height: 100px;
+              margin-top: 5%;
+              }
+
+
+            /*-------------------------------------------general content end-----------------------------------*/
+
+
+            /*-------------------------------------------home page-----------------------------------*/
+
+
+            .socialMedia1{
+              font-weight: 200;
+              color: #262223;
+              grid-column: 4/11;
+              grid-row: 2/3;
+              font-size: 28px;
+              display: inline-flex;
+              margin: 0 auto;
+              padding-top: 13rem;
+              justify-content: space-between;
+              padding-left: 2rem;
+              
+            }
+            
+            .socialLink1{
+              text-align: center;
+              grid-column: 2/4;
+            }
+            
+            .socialLink2{
+              margin-left:7.5rem;
+              text-align: center;
+            }
+
+            .mainContent{
+              grid-column: 2/10;
+              grid-row: 5/7;
+              padding-top: 18rem;
+              
+            }
+
+            .headingHome{
+              margin-top: 5rem;
+              grid-column: 2/14;
+              grid-row: 4/5;
+            }
+
+            .portrait{
+              grid-column: 11/14;
+              grid-row: 5/7;
+              padding-top: 0rem;
+              margin-top: 31.5rem;
+              z-index: 2;
+              margin-bottom: 25rem;
+              }
+
+            .arrow{
+              grid-row: 2/3;
+              grid-column: 2/14;
+              animation-delay: 9s;
+              padding-left: 0rem;
+              margin: 0 auto;
+              padding-top: 30rem;
+            }
+
+
+            /*-------------------------------------------home page end-----------------------------------*/
+
+
+            /*-------------------------------------------contact page-----------------------------------*/
+
+            .error{
+              grid-column: 2/14;
+              grid-row: 4/4;
+          }
+      
+          .form{
+            grid-column: 2/8;
+            grid-row: 3/5;
+            border-right: #000000 1px solid;
+            margin-right: -3.5rem;
+            margin-top: 5rem;;
+          }
+        
+          .name{
+            align-items: center;
+            display: inline-flex;
+          }
+        
+          .inputName{
+            padding-left: 0rem;
+          }
+        
+          .email{
+            display: inline-flex;
+            align-items: center;
+          }
+        
+          .inputEmail{
+            padding-left: 0rem;
+          }
+        
+          .message{
+            display: inline-flex;
+            align-items: center;
+          }
+        
+          .inputMessage{
+            padding-left: 0rem;
+          }
+        
+        .contactIcons{
+            grid-column: 8/9;
+            grid-row: 3/5;
+            padding-top: 8rem;
+            padding-left: 4rem;
+        }
+        
+        .contactText{
+            grid-column: 9/14;
+            grid-row: 3/5;
+            padding-top: 8rem;
+            padding-left: 2.5rem;
+        }
+  
+        .bi-geo-alt{
+          margin-top: 0rem;
+        }
+  
+        .bi-instagram{
+          margin-top: 0.2rem;
+          margin-left: 0.2rem;
+        }
+  
+
+
+        /*-------------------------------------------contact page end-----------------------------------*/
+
+
+        /*-------------------------------------------error page-----------------------------------*/
+
+
+        .errorH{
+            font-size: 130px;
+            text-decoration: underline;
+        }
+      
+        .errorT{
+            font-size: 20px;
+        }
+    
+      /*-------------------------------------------error page end-----------------------------------*/
+
+
+      /*-------------------------------------------portfolio page-----------------------------------*/
+       
+
+      .webCard{
+        grid-column: 2/6;
+        grid-row: 3/7;
+        margin-top: 25%;
+    }
+    
+    .appCard{
+        grid-column: 10/14;
+        grid-row: 3/7;
+        margin-top: 25%;
+    }
+    
+    .dataCard{
+        grid-column: 6/10;
+        grid-row: 3/7;
+        margin-top: 25%;
+    }
+      
+
+      /*-------------------------------------------portfolio page-----------------------------------*/
+
+
+      /*-------------------------------------------app page-----------------------------------*/
+      
+
+      .appMockup{
+          grid-column: 1/8;
+          grid-row: 3/4;
+          border: #ffffff 1px sold;
+          margin-left: 5rem;
+          margin-top: 3rem;
+      }
+      
+      .appContent{
+          grid-column: 8/14;
+          grid-row: 3/4;
+          margin-top: 2.5rem;
+          
+      }
+      
+      .appVideo{
+          grid-column: 2/14;
+          grid-row: 5/6;
+          margin-top: 2rem;
+          margin-left: 0rem;
+      }
+
+
+      /*-------------------------------------------app page end-----------------------------------*/
+
+
+      /*-------------------------------------------infographic page-----------------------------------*/
+
+
+      .data{
+        grid-column: 1/8;
+        grid-row: 3/4;
+        border: #ffffff 1px sold;
+        margin-top: 5rem;
+    }
+
+      .dataContent{
+          grid-column: 8/14;
+          grid-row: 3/4;
+          margin-top: 6rem;
+      }
+
+      .dataVideo{
+          grid-column: 2/14;
+          grid-row:4/5;
+          margin-top: -2rem;
+      }
+
+
+      /*-------------------------------------------infographic page end-----------------------------------*/
+
+
+      /*-------------------------------------------ui page-----------------------------------*/
+
+
+      .web{
+        grid-column: 1/8;
+        grid-row: 3/4;
+        margin-top: 0rem;
+        margin-left: 3rem;
+        }
+        
+        .webContent{
+        grid-column: 8/14;
+        grid-row: 3/4;
+        margin-top: 13%;
+        margin-bottom: 0%;
+        }
+        
+        .webVideo{
+        grid-column: 2/14;
+        grid-row: 5/6;
+        margin-top:6rem;
+        padding-bottom: 4rem;
+        }
+
+ 
+         /*-------------------------------------------ui page end-----------------------------------*/
+      
+        /*--------------------------------------------CONTENT END-----------------------------------------------*/
+
+
+        /*-------------------------------------------TAGS-----------------------------------*/
+
+
+        input[type=text], select, textarea {
+          width: 11rem;
+          padding: 12px;
+          border-radius: 0.5rem;
+          border: 0.1rem solid black; 
+          font-family: 'roboto';
+        }
+        
+        
+        
+        label {
+          text-align: left;
+          color:#000000;
+          font-family: 'roboto';
+          width: 8rem;
+      
+        }
+      
+      a{
+        text-decoration: none;
+      }    
+
+        li{
+        list-style-type: none;
+        display: inline;
+        color: black;
+        }
+
+        p{
+          margin-bottom: 3rem;
+          font-size: 12px;
+          line-height: 1.5rem;
+          text-transform: lowercase;
+          font-weight: 300;
+        }
+
+        h1{
+          font-size: 90px;
+          text-align: left;
+          margin-top: 3rem;
+          margin-bottom: 1rem;
+          letter-spacing: -8px;
+        }
+
+        h3{
+          font-size: 24px;
+          font-weight: 300;
+      }
+      
+      p{
+          margin-top: 0.5rem;
+          margin-bottom: 2rem;
+          font-size: smaller;
+          line-height: 1.5rem;
+          font-weight: 100;
+      }
+    
+      h4{
+        font-size: 60px;
+        grid-column: 2/14;
+        grid-row: 4/5;
+        margin-top: -5%;
+        margin-bottom:0%;
+        letter-spacing: -6px;
+    }
+
+
+        /*-------------------------------------------TAGS END-----------------------------------*/
+
+
+        /*-------------------------------------------BTNS-----------------------------------*/
+          
+
+        .btn1{
+          border: #000000 1px solid;
+          padding-left: 2rem;
+          padding-right: 2rem;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+          border-radius: 3rem;
+          font-size: smaller;
+        }
+
+        .btn3{
+          border-radius: 0.5rem;
+          border: 0.1rem solid black; 
+          color: #000000;
+          margin-bottom: 2rem;
+          font-size: smaller;
+          background-color: #ffffff;
+            border: 0.1rem solid black; 
+            padding: 9px 28px;
+            margin-left: 8.9rem;
+          }
+        
+        .btn2{
+          border: #000000 1px solid;
+          padding-left: 2.1rem;
+          padding-right: 2.1rem;
+          padding-top: 0.3rem;
+          padding-bottom: 0.3rem;
+          border-radius: 3rem;
+          font-size: smaller;
+      }
+
+      .pagination{
+        height: 2.3rem;
+        width: 20rem;
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 10rem;
+        writing-mode:horizontal-tb;
+        text-orientation:sideways;
+        display:inline-flex;
+        justify-content: space-between;
+        font-weight: 300;
+        margin: 0 auto;
+        margin-top: 2rem;
+        padding-top: 0rem;
+        letter-spacing: 0px;
+        grid-column: 6/10;
+        grid-row: 2/3;
+        z-index: 1;
+        
+      }
+      
+      .project1{
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 5rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+        margin-left: 0.2rem;
+        padding: 0.4rem 1.5rem 0.4rem 1.5rem;
+        font-size: 14px;
+      }
+      
+      .project1:hover{
+        background-color: #ffffff;
+        color: #000000;
+  
+      }
+  
+      .project2{
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 5rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+        margin-left: 0rem;
+        padding: 0.4rem 1.5rem 0.4rem 1.5rem;
+        font-size: 14px;
+      }
+      
+      .project2:hover{
+        background-color: #ffffff;
+        color: #000000;
+      }
+      
+      .project3{
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 5rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+        margin-right: 0.2rem;
+        padding: 0.4rem 1.5rem 0.4rem 1.5rem;
+        font-size: 14px;
+      }
+      
+      .project3:hover{
+        background-color: #ffffff;
+        color: #000000;
+      }
+
+      
+        /*-------------------------------------------BTNS END-----------------------------------*/
+
+
+          }
+
+        /*-------------------------------------------MEDIA QUERIES MOBILE END-----------------------------------*/
+
+
+        /*-------------------------------------------MEDIA QUERIES TABLET-----------------------------------*/
+
+       
+
+          /*-------------------------------------------MEDIA QUERIES TABLET END-----------------------------------*/
+
+
+          /*-------------------------------------------MEDIA QUERIES DESKTOP-----------------------------------*/
+
+
+
+        @media only screen and (min-width: 1200px) and (max-width: 1920px){
+
+
+          .bg {
+            /* The image used */
+            background-image: url(../img/backgroundGradient.png);
+          
+            /* Full height */
+            height: 100%;
+          
+            /* Center and scale the image nicely */
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size:cover;
+          }
+
+          .bg2{
+            /* The image used */
+            background-image: url(../img/bg2.png);
+          
+            height: 100%;
+        
+            /* Center and scale the image nicely */
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+      
+
+          /*-------------------------------------------grid-----------------------------------*/ 
+          .container {
+          display: grid;
+          grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+          grid-column-gap: 10px;
+          grid-row-gap: 15px;
+        
+        }
+        
+        .grid {
+          color: #000000;
+          padding-top: 12px;
+        }
+        
+        /*-------------------------------------------grid end-----------------------------------*/
+        
+        /*-------------------------------------------nav-----------------------------------*/
+        
+        .navHome{
+          grid-column: 1/2;
+          font-size: 20px;
+          text-align: center;
+          grid-row: 1/1;
+          animation-delay: 8s;
+          animation-duration: 1s;
+          color: #000000;
+        }
+        
+          .navHome1{
+          grid-column: 14/15;
+          grid-row: 1/1;
+          font-size: 20px;
+          text-align: center;
+          animation-delay: 8s;
+          animation-duration: 1s;
+          color: #000000;
+        }
+
+        .nav{
+          grid-column: 1/2;
+          font-size: 20px;
+          text-align: center;
+          grid-row: 1/1;
+          animation-delay: 8s;
+          animation-duration: 1s;
+        }
+
+        .navLogo{
+          grid-row: 1/1;
+          grid-column: 7/9;
+          margin: 0 auto;
+        }
+        
+        .nav1{
+          grid-column: 14/15;
+          grid-row: 1/1;
+          font-size: 20px;
+          text-align: center;
+          animation-delay: 8s;
+          animation-duration: 1s;
+        }
+        
+        /*-------------------------------------------nav end-----------------------------------*/
+
+        
+  /*------------------------------------------------------CONTENT--------------------------------------------------------*/
+
+
+      /*----------------------------------------------------general content-------------------------------------------------------*/
+
+
+         .heading{
+        grid-column: 2/14;
+        grid-row: 2/3;
+        height: 100px;
+        margin-top: 5%;
+        
+        }
+
+        #videoLogo{
+          grid-column: 1/16;
+          grid-row:1/3;
+          pointer-events: none;
+          margin: 0 auto;
+          width: 100%;
+          height: auto;
+        }
+
+     /*----------------------------------------------------general content end-------------------------------------------------------*/
+
+
+     /*----------------------------------------------------home page-------------------------------------------------------*/
+        
+          .socialMedia1{
+          font-weight: 300;
+          color: #262223;
+          grid-row: 2/3;
+          font-size: 28px;
+          display: inline-flex;
+          margin-left: 1.5rem;
+          padding-top: 8rem;
+          justify-content: space-around;
+        }
+        
+        .socialLink1{
+          text-align: center;
+          grid-column: 2/3;
+        }
+        
+        .socialLink2{
+          margin-left: 5rem;
+          text-align: center;
+        }
+        
+        .mainContent{
+          grid-column: 2/9;
+          grid-row: 5/7;
+          padding-top: 3rem;
+          
+        }
+
+        .headingHome{
+          margin-top: 1rem;
+        }
+        
+        
+        .portrait{
+        grid-column: 10/15;
+        grid-row: 5/7;
+        padding-top: 0rem;
+        margin-top: 15rem;
+        z-index: 2;
+        margin-bottom: 25rem;
+        }
+        
+        .arrow{
+          grid-row: 1/3;
+          grid-column: 2/14;
+          margin: 0 auto;
+          animation-delay: 9s;
+          padding-top: 48rem;
+      
+        }
+
+      /*----------------------------------------------------home page end-------------------------------------------------------*/
+
+       
+      /*----------------------------------------------------contact page-------------------------------------------------------*/
+  
+        .form{
+          grid-column: 2/8;
+          grid-row: 3/5;
+          border-right: #000000 1px solid;
+          margin-right: -2rem;
+          margin-top: 5rem;
+        }
+      
+        .name{
+          align-items: center;
+          display: inline-flex;
+        }
+      
+        .inputName{
+          padding-left: 3rem;
+        }
+      
+        .email{
+          display: inline-flex;
+          align-items: center;
+        }
+      
+        .inputEmail{
+          padding-left: 3rem;
+        }
+      
+        .message{
+          display: inline-flex;
+          align-items: center;
+        }
+      
+        .inputMessage{
+          padding-left: 3rem;
+        }
+      
+      .contactIcons{
+          grid-column: 8/9;
+          grid-row: 3/5;
+          padding-top: 6.8rem;
+          padding-left: 5rem;
+      }
+      
+      .contactText{
+          grid-column: 9/14;
+          grid-row: 3/5;
+          padding-top: 6rem;
+          padding-left: 1.5rem;
+      }
+
+      .bi-geo-alt{
+        margin-top: 1rem;
+      }
+
+      .bi-instagram{
+        margin-top: 1.3rem;
+        margin-left: 0.2rem;
+      }
+
+      /*-----------------------------------------------------contact page end-------------------------------------------------------*/
+
+
+      /*-----------------------------------------------------error page-------------------------------------------------------*/
+
+       .error{
+          grid-column: 2/14;
+          grid-row: 4/4;
+      }
+
+      .errorH{
+          font-size: 130px;
+          text-decoration: underline;
+      }
+      
+      .errorT{
+          font-size: 28px;
+      }
+
+      /*-----------------------------------------------------error page end-------------------------------------------------------*/
+
+     
+
+      /*-----------------------------------------------------portfolio page-------------------------------------------------------*/
+
+    .webCard{
+        grid-column: 2/6;
+        grid-row: 3/7;
+        margin-top: 25%;
+    }
+    
+    .appCard{
+        grid-column: 10/14;
+        grid-row: 3/7;
+        margin-top: 25%;
+    }
+    
+    .dataCard{
+        grid-column: 6/10;
+        grid-row: 3/7;
+        margin-top: 25%;
+    }
+    
+     /*-----------------------------------------------------portfolio page end-------------------------------------------------------*/
+
+
+     /*-----------------------------------------------------app page-------------------------------------------------------*/
+
+
+    .appMockup{
+        grid-column: 2/8;
+        grid-row: 3/4;
+        border: #ffffff 1px sold;
+        margin-top: 5rem;
+    
+    }
+    
+    .appContent{
+        grid-column: 8/14;
+        grid-row: 3/4;
+        padding-left: 2rem;
+        margin-top: 5rem;
+    }
+    
+    .appVideo{
+        grid-column: 2/14;
+        grid-row: 5/6;
+        margin-top: 2rem;
+        margin-left: 0rem;
+        margin-bottom: 2rem;
+    }
+
+
+    /*-----------------------------------------------------app page end-------------------------------------------------------*/
+
+
+    /*-----------------------------------------------------infographic page-------------------------------------------------------*/
+
+
+    .data{
+      grid-column: 2/8;
+      grid-row: 3/4;
+      border: #ffffff 1px sold;
+      margin-left: 10%;
+      margin-top: 5%;
+  }
+
+  .dataContent{
+      grid-column: 8/14;
+      grid-row: 3/4;
+      padding-left: 2rem;
+      margin-top: 10%;
+  }
+
+  .dataVideo{
+      grid-column: 2/14;
+      grid-row: 8/12;
+      margin-top: -7rem;
+      margin-bottom: 2rem;
+  }
+
+   /*-----------------------------------------------------infographic page end-------------------------------------------------------*/
+
+
+   /*-----------------------------------------------------ui page-------------------------------------------------------*/
+
+
+  .web{
+    grid-column: 2/8;
+    grid-row: 3/4;
+    margin-top: 2%;
+    margin-left: 8%;
+    }
+    
+    .webContent{
+    grid-column: 8/14;
+    grid-row: 3/4;
+    margin-top: 11%;
+    }
+    
+    .webVideo{
+    grid-column: 2/14;
+    grid-row: 5/6;
+    margin-top:0rem;
+    padding-bottom: 2rem;
+    }
+
+
+  /*-----------------------------------------------------ui page end-------------------------------------------------------*/
+    
+        
+/*---------------------------------------------------------------CONTENT END----------------------------------------------------------------------*/
+        
+        /*-------------------------------------------ANIMATIONS-----------------------------------*/
+        
+        
+        #fadeout{
+          opacity: 0;
+          transition: 1s opacity;
+          text-align: center;
+        }
+        
+        
+        #fadeout2{
+          opacity: 0;
+          transition: 1s opacity;
+          text-align: center;
+        }
+        
+        /*-------------------------------------------ANIMATIONS END-----------------------------------*/
+
+        
+        /*-------------------------------------------TAGS-----------------------------------*/
+ 
+        h1{
+          font-size: 120px;
+          text-align: left;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          letter-spacing: -10px;
+        }
+
+        input[type=text], select, textarea {
+          width: 250px;
+          padding: 12px;
+          border-radius: 0.5rem;
+          border: 0.1rem solid black; 
+          font-family: 'roboto';
+        }
+        
+        label {
+          text-align: left;
+          color:#000000;
+          font-family: 'roboto';
+          width: 8rem;
+      
+        }
+    
+      h3{
+          font-size: 27px;
+          font-weight: 300;
+      }
+      
+      p{
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+          font-size: 18px;
+          line-height: 2rem;
+          font-weight: 100;
+          text-transform: lowercase;
+      }
+      
+      h4{
+          font-size: 80px;
+          grid-column: 2/14;
+          grid-row: 4/5;
+          margin-bottom: 1%;
+          letter-spacing: -8px;
+      }
+
+
+    /*-------------------------------------------TAGS ENDS-----------------------------------*/
+
+
+     /*-------------------------------BTNS--------------------------------*/
+      
+
+
+    .btn3{
+      border-radius: 0.5rem;
+      border: 0.1rem solid black; 
+      padding: 10px 30px;
+      margin-left: 13.5rem;
+    }
+
+    .pagination{
+      height: 2.5rem;
+      width: 21rem;
+      background-color: #000000;
+      color: #ffffff;
+      border-radius: 10rem;
+      writing-mode:horizontal-tb;
+      text-orientation:sideways;
+      display:inline-flex;
+      justify-content: space-between;
+      font-weight: 300;
+      margin: 0 auto;
+      margin-top: 2rem;
+      padding-top: 0rem;
+      letter-spacing: 0px;
+      grid-column: 6/10;
+      grid-row: 2/3;
+      z-index: 1;
+      
+    }
+    
+    .project1{
+      background-color: #000000;
+      color: #ffffff;
+      border-radius: 5rem;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      margin-left: 0.2rem;
+      padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+      font-size: 16px;
+    }
+    
+    .project1:hover{
+      background-color: #ffffff;
+      color: #000000;
+
+    }
+
+    .project2{
+      background-color: #000000;
+      color: #ffffff;
+      border-radius: 5rem;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      margin-left: 0rem;
+      padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+      font-size: 16px;
+    }
+    
+    .project2:hover{
+      background-color: #ffffff;
+      color: #000000;
+    }
+    
+    .project3{
+      background-color: #000000;
+      color: #ffffff;
+      border-radius: 5rem;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      margin-right: 0.2rem;
+
+      padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+      font-size: 16px;
+    }
+    
+    .project3:hover{
+      background-color: #ffffff;
+      color: #000000;
+    }
+    
+    .margin-left{
+      margin-left: -2rem;
+    }
+
+
+
+    /*-------------------------------BTNS END--------------------------------*/
+      
+      }
+
+        /*-------------------------------------------MEDIA QUERIES DESKTOP END-----------------------------------*/
+
+
+
+
+/*----------------------------------------------------------------------------------MEDIA QUERIES END-------------------------------------------------------------------------------------*/
+
