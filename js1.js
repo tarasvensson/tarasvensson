@@ -26,5 +26,5 @@ $(document).ready(function() {
 });
 
 if (isMobile) {
-      $("videoLogo").find('video').attr('poster', 'img/logo.svg');
+      $("grid video").find('video').attr('poster', 'img/logo.svg');
 }
