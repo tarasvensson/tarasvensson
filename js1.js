@@ -25,3 +25,6 @@ $(document).ready(function() {
 	});
 });
 
+if (isMobile) {
+      $("videoLogo").find('video').attr('poster', 'img/logo.svg');
+}
